@@ -1,2 +1,2 @@
 for i in range(int(input())):
-    print("Case #"+str(i+1)+":", *reversed(list(input().split())))
+    print("Case #"+str(i+1)+":", *(list(input().split()))[::-1])
