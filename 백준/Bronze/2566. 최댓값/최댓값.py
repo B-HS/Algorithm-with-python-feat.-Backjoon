@@ -1,16 +1,17 @@
 ary = []
-for i in range(9):
-    tmp = list(map(int, input().split()))
-    ary.append(tmp)
-
 mx = 0
-where = 0
 
 for i in range(9):
-    if mx < max(ary[i]):
+    ary.append(list(map(int,input().split())))
+    
+    if mx <= max(ary[i]):
         mx = max(ary[i])
-        where = i+1, ary[i].index(max(ary[i]))+1
+        a = i + 1
+        b = ary[i].index(mx) + 1
 
-print(mx)
-for i in where:
-    print(i, end=" ")
+if mx !=0:
+    print(mx)
+    print(a, b)
+else:
+    print(0)
+    print(1, 1)
