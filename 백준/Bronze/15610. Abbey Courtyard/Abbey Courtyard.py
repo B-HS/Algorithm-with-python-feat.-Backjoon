@@ -1,1 +1,1 @@
-import math;print(math.sqrt(int(input()))*4)
+print(int(input())**(1/2)*4)
