@@ -1,1 +1,1 @@
-print(eval(input()+input()+input()))
+a=input;print(eval(a()+a()+a()))
